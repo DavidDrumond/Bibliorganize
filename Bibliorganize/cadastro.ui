@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cadastro</class>
+ <widget class="QDialog" name="cadastro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>597</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CADASTRO DO LEITOR</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>NOME DO LEITOR</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="NOME">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>ENDEREÇO</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>RUA</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="8">
+       <widget class="QLineEdit" name="RUA">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>NÚMERO </string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QSpinBox" name="NUMERO">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="maximum">
+         <number>999999999</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="label_5">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>BAIRRO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4" colspan="5">
+       <widget class="QLineEdit" name="BAIRRO">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CIDADE</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2" colspan="3">
+       <widget class="QLineEdit" name="CIDADE">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>ESTADO</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QComboBox" name="ESTADO">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Acre</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Alagoas</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amapá</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Amazonas</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bahia</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ceará</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Distrito Federal</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Espírito Santo </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Goiás</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Maranhão</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mato Grosso</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mato Grosso do Sul</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Minas Gerais </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pará </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Paraíba</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Paraná</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Pernambuco</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Piauí </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rio de Janeiro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rio Grande do Norte</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rio Grande do Sul</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Rondônia</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Roraima</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Santa Catarina</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>São Paulo</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Sergipe</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tocantins</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="2" column="7">
+       <widget class="QLabel" name="label_8">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>CEP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="8">
+       <widget class="QLineEdit" name="CEP">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>DOCUMENTOS</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>CPF</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="CPF">
+          <property name="inputMask">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>RG</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="RG"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>CONTATO</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QSplitter" name="splitter_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>TELEFONE</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="TELEFONE">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="inputMask">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_10">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>E_MAIL</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="E_MAIL">
+         <property name="font">
+          <font>
+           <family>Times New Roman</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>CADASTRAR PESSOA</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

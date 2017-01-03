@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>773</width>
+    <height>343</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BIBLIORGANIZE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>images.png</normaloff>images.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableView" name="tableView"/>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>ORDENAR TABELA POR:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Indice</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nome_livro</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Nome_autor</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Trilha</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>CDU</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Editora</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Colecao</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Local</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Data_edic</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>n_exemplar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Situacao</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>data_entrada</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>data_emprestimo</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>data_devolucao</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>0</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>9</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>ATUALIZAR</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>NÚMERO DE LIVROS NA BIBLIOTECA</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLCDNumber" name="lcdNumber">
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>true</bool>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>773</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>LIVROS</string>
+    </property>
+    <addaction name="actionInserir_Livro"/>
+    <addaction name="actionBaixa_de_livro"/>
+    <addaction name="actionLivros_em_Baixa"/>
+    <addaction name="actionAlterar_Campo"/>
+    <addaction name="actionPesquisar_Livro"/>
+   </widget>
+   <widget class="QMenu" name="menuEmprestimos">
+    <property name="title">
+     <string>EMPRÉSTIMO</string>
+    </property>
+    <addaction name="actionEmpr_stimo"/>
+    <addaction name="actionDevolu_es"/>
+    <addaction name="actionLivros_emprestados"/>
+    <addaction name="actionRenova_o"/>
+   </widget>
+   <widget class="QMenu" name="menuCadastro">
+    <property name="title">
+     <string>CADASTRO</string>
+    </property>
+    <addaction name="actionCadastro_pessoa"/>
+    <addaction name="actionLEITORES"/>
+    <addaction name="actionAlterar_Campo_do_Leitor"/>
+   </widget>
+   <widget class="QMenu" name="menuOP_ES">
+    <property name="title">
+     <string>OPÇÕES</string>
+    </property>
+    <addaction name="actionSalvar_Tabela_como_arquivo"/>
+    <addaction name="actionDeltar_campo_de_tabela"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuEmprestimos"/>
+   <addaction name="menuCadastro"/>
+   <addaction name="menuOP_ES"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionInserir_Livro">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/icone_menu1.jpg</normaloff>:/LIVRO/icone_menu1.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Inserir Livro </string>
+   </property>
+   <property name="iconText">
+    <string>Inserir Livro</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Inserir Livro&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionBaixa_de_livro">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/icone_menu1.jpg</normaloff>:/LIVRO/icone_menu1.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Baixa de livro</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionLivros_em_Baixa">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/icone_menu1.jpg</normaloff>:/LIVRO/icone_menu1.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Livros em Baixa</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionAlterar_Campo">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/icone_menu1.jpg</normaloff>:/LIVRO/icone_menu1.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Alterar Campo </string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionEmpr_stimo">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/escrevendo-em-um-livro-aberto_318-44387.jpg</normaloff>:/LIVRO/escrevendo-em-um-livro-aberto_318-44387.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Empréstimo</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionDevolu_es">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/escrevendo-em-um-livro-aberto_318-44387.jpg</normaloff>:/LIVRO/escrevendo-em-um-livro-aberto_318-44387.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Devoluções</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionCadastro_pessoa">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/book-reader-sign-icon-vector_75089188.jpg</normaloff>:/LIVRO/book-reader-sign-icon-vector_75089188.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Cadastro Leitor</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionLivros_emprestados">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/escrevendo-em-um-livro-aberto_318-44387.jpg</normaloff>:/LIVRO/escrevendo-em-um-livro-aberto_318-44387.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Livros emprestados</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionLEITORES">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/book-reader-sign-icon-vector_75089188.jpg</normaloff>:/LIVRO/book-reader-sign-icon-vector_75089188.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Leitores</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionAlterar_Campo_do_Leitor">
+   <property name="icon">
+    <iconset>
+     <normaloff>book-reader-sign-icon-vector_75089188.jpg</normaloff>
+     <normalon>:/LIVRO/book-reader-sign-icon-vector_75089188.jpg</normalon>book-reader-sign-icon-vector_75089188.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Alterar Campo do Leitor</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionRenova_o">
+   <property name="icon">
+    <iconset>
+     <normaloff>escrevendo-em-um-livro-aberto_318-44387.jpg</normaloff>
+     <normalon>:/LIVRO/escrevendo-em-um-livro-aberto_318-44387.jpg</normalon>escrevendo-em-um-livro-aberto_318-44387.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Renovação</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionSalvar_Tabela_como_arquivo">
+   <property name="icon">
+    <iconset>
+     <normaloff>disquete-formato-de-disco-de-armazenamento-vintage-salvar-botao-de-interface_318-31442.jpg</normaloff>
+     <normalon>:/LIVRO/disquete-formato-de-disco-de-armazenamento-vintage-salvar-botao-de-interface_318-31442.jpg</normalon>disquete-formato-de-disco-de-armazenamento-vintage-salvar-botao-de-interface_318-31442.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar Tabela  como arquivo </string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionDeltar_campo_de_tabela">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/disquete-formato-de-disco-de-armazenamento-vintage-salvar-botao-de-interface_318-31442.jpg</normaloff>:/LIVRO/disquete-formato-de-disco-de-armazenamento-vintage-salvar-botao-de-interface_318-31442.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Deletar Campo de Tabela por Índice</string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionPesquisar_Livro">
+   <property name="icon">
+    <iconset resource="resource_file.qrc">
+     <normaloff>:/LIVRO/icone_menu1.jpg</normaloff>:/LIVRO/icone_menu1.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Pesquisar Livro</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>

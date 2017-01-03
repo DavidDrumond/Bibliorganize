@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>livros_emprestados</class>
+ <widget class="QDialog" name="livros_emprestados">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>555</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LIVROS EMPRESTADOS</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableView" name="tableView"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>PESQUISAR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Indice</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Indice_leitor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nome_leitor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nome_livro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nome_autor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Telefone</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CPF</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Data_Emprestimo</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Data_Devolucao</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>NÚMERO DE LIVROS EMPRESTADOS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLCDNumber" name="lcdNumber">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

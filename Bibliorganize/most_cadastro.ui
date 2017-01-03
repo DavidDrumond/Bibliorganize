@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>most_cadastro</class>
+ <widget class="QDialog" name="most_cadastro">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>515</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MOSTRAR PESSOAS CADASTRADAS</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableView" name="tableView"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>PESQUISAR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>Indice</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Nome_leitor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Telefone</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rua</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Numero</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bairro</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Cidade</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Estado</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CEP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>E_mail</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CPF</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>RG</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>NUMERO DE PESSOAS CADASTRADAS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLCDNumber" name="lcdNumber">
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="segmentStyle">
+        <enum>QLCDNumber::Flat</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

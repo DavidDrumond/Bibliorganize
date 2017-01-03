@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/LIVRO">
+        <file>images.png</file>
+        <file>icone_menu1.jpg</file>
+        <file>book-reader-sign-icon-vector_75089188.jpg</file>
+        <file>disquete-formato-de-disco-de-armazenamento-vintage-salvar-botao-de-interface_318-31442.jpg</file>
+        <file>escrevendo-em-um-livro-aberto_318-44387.jpg</file>
+    </qresource>
+</RCC>
